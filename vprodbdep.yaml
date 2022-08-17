@@ -19,10 +19,6 @@ spec:
         image: vprofile/vprofiledb:V1
         args:
           - "--ignore-db-dir=lost+found"
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
         volumeMounts:
           - mountPath: /var/lib/mysql
             name: vpro-db-data
